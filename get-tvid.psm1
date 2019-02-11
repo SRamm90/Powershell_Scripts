@@ -1,3 +1,7 @@
+##This script attempts to pull a TeamViewer ID number from the registry of another Domain Joined PC. 
+##If unable, it attempts to start the services required for remote registry access
+##If Found, it also copies the ID to your clipboard
+
 function Get-TVID {
 
     param(
