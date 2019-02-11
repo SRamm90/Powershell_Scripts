@@ -1,4 +1,11 @@
-﻿
+##This Script compares any number of files to a master file every few seconds. 
+##If ransomware begins encrypting the files the compare will fail, a notification email
+##is sent and the PC is immidiately shutdown to prevent further encryption. 
+##
+## IT IS RECOMENDED TO COMPILE THIS SCRIPT TO A SERVICE AFTER UPDATEING TO YOUR SETTINGS!
+##
+
+
 ################################################
 # Configure the variables below
 ################################################
