@@ -1,4 +1,7 @@
-﻿Get-ADOrganizationalUnit -filter * -property Description |
+﻿## This Script Counts the number of Active (non Disabled) Email addresses for a given Forest, divided up by OU. 
+ ## Use case is Billing / Records  for Hosted Exchange servers
+ 
+ Get-ADOrganizationalUnit -filter * -property Description |
 foreach {
 $u=Get-ADUser -filter {EmailAddress -like "*"} -searchbase $_.distinguishedname -ResultPageSize 2000 -resultSetSize 500 -searchscope Onelevel
 $total=($u | measure-object).count
