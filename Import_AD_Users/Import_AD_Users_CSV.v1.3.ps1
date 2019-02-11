@@ -1,28 +1,11 @@
-﻿###########################################################
-# AUTHOR  : Victor Ashiedu
-# WEBSITE : iTechguides.com
-# BLOG    : iTechguides.com/blog-2/
-# CREATED : 08-08-2014 
-# UPDATED : 19-09-2014
-# VERSION : 1.3
-# COMMENT : Sometimes when users are created in Active Directory, some attributes are left blank. 
-#           This PowerShel Script updates blank user attributes like email address, physical address
-#           Manager and more using a CSV file as imput. 
-#           If you find this script useful, please take time to rate it via the link below: 
-#           http://gallery.technet.microsoft.com/PowerShell-script-to-376e9462
-###########################################################
-#SCRIPT BEGINS
-#The line below measures the lenght of time it takes to
-#execute this script
-
 # Get script Start Time (used to measure run time)
 $startDTM = (Get-Date)
 
-#Define location of my script variable
+#Define location of script variable
 #the -parent switch returns one directory lower from directory defined. 
 #below will return up to ImportADUsers folder 
-#and since my files are located here it will find it.
-#It failes withpout appending "*.*" at the end
+#and since files are located here it will find it.
+#It fails withpout appending "*.*" at the end
 #This file is required to update fields for existing users
 #Modify this script to create new users in UnifiedGov domain
 
@@ -35,7 +18,6 @@ $logdate = Get-Date -Format ddmmyyyy
 
 $userdisableddate = Get-Date
 
-
 #Define CSV and log file location variables
 #they have to be on the same location as the script
 
@@ -43,10 +25,9 @@ $csvfile = $path + "GAL-FINAL.csv"
 $logfile = $path + "logs\$logdate.logfile.txt"
 $scriptrunrime = $path + "logs\scripttime.txt"
 
-
 #Define variable for a server with AD web services installed
 
-$ADServer = 'ELI-DC01'
+$ADServer = 'XXXX'
 
 #define searchbase variable
 
