@@ -8,10 +8,10 @@ $HoneypotFile = "HoneypotFile.docx"
 $HoneypotWitenessDir = "C:\zzzWitness"
 $TestInterval = "3"
 # Step 2. Specify the SMTP Email Settings
-$EmailTo = "TechSupport@esp-cc.net"
-$EmailFrom = "RansomDetected@esp-cc.net"
-$SMTPServer = "mail.ebglobal.com"
-$SMTPPort = "587"
+$EmailTo = "XXXXXXXXXXXXX@XXXXXX.XXX"
+$EmailFrom = "XXXXXXXXXXXXX@XXXXXX.XXX"
+$SMTPServer = "mail.server.address"
+$SMTPPort = "XXX"
 $SMTPUser =
 $SMTPPassword =
 $SMTPSSLEnabled = "FALSE"
